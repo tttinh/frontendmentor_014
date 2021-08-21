@@ -1,3 +1,30 @@
+@use 'var';
+
+.btn {
+  font-family: var.$fontHeading;
+  font-weight: 400;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.25rem 1.5rem;
+  color: white;
+  background-color: var.$colorLightPrimary;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var.$colorLightPrimary;
+  border: 2px solid var.$colorLightPrimary;
+  border-radius: 25px;
+}
+
+.btn-round {
+  padding: 1rem 2rem;
+  font-weight: 600;
+  background-color: var.$colorPrimary;
+  border-radius: 25px;
+}
+
 .split {
   display: flex;
   align-items: center;

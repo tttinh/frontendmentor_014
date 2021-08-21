@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.split {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  padding: 3rem 3rem;
+}
+header img {
+  width: 240px;
+}
+
+/*# sourceMappingURL=style.css.map */

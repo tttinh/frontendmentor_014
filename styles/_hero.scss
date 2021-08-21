@@ -1,3 +1,5 @@
+@use 'var';
+
 .hero {
   .container {
     padding-top: 5rem;
@@ -19,5 +21,26 @@
 
   .btn-round {
     width: 300px;
+  }
+}
+
+.stats {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+
+  &__icon {
+    width: auto;
+  }
+
+  &__number {
+    font-weight: 700;
+    font-size: 6rem;
+  }
+
+  &__desc {
+    color: gray;
+    font-size: 1.5rem;
   }
 }

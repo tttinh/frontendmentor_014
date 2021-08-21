@@ -1,0 +1,23 @@
+.hero {
+  .container {
+    padding-top: 5rem;
+    max-width: 1150px;
+
+    img {
+      margin-top: 4rem;
+    }
+  }
+
+  &-title {
+    font-size: 3rem;
+  }
+
+  &-desc {
+    max-width: 520px;
+    margin: 2rem 0;
+  }
+
+  .btn-round {
+    width: 300px;
+  }
+}

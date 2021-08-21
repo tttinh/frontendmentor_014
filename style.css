@@ -14,16 +14,11 @@ img {
   width: 100%;
 }
 
-body {
-  min-height: 100vh;
-}
-
 .btn {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  text-align: center;
   display: inline-block;
   cursor: pointer;
-  padding: 0.25rem 1.5rem;
+  padding: 0.5rem 2rem;
   color: white;
   background-color: #ff8fd8;
   border-radius: 5px;
@@ -32,15 +27,15 @@ body {
 .btn-outline {
   background-color: transparent;
   color: #ff8fd8;
-  border: 2px solid #ff8fd8;
+  border: 1px solid #ff8fd8;
   border-radius: 25px;
 }
 
 .btn-round {
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   font-weight: 600;
   background-color: #ff52bf;
-  border-radius: 25px;
+  border-radius: 45px;
 }
 
 .split {
@@ -49,11 +44,57 @@ body {
   justify-content: space-between;
 }
 
+.element-center {
+  display: grid;
+  place-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1300px;
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+}
+
 header {
   padding: 3rem 3rem;
 }
 header img {
   width: 240px;
+}
+
+.hero .container {
+  padding-top: 5rem;
+  max-width: 1150px;
+}
+.hero .container img {
+  margin-top: 4rem;
+}
+.hero-title {
+  font-size: 3rem;
+}
+.hero-desc {
+  max-width: 520px;
+  margin: 2rem 0;
+}
+.hero .btn-round {
+  width: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */

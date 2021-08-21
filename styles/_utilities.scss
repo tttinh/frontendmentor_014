@@ -1,11 +1,10 @@
 @use 'var';
 
 .btn {
-  font-family: var.$fontHeading;
-  font-weight: 400;
+  text-align: center;
   display: inline-block;
   cursor: pointer;
-  padding: 0.25rem 1.5rem;
+  padding: 0.5rem 2rem;
   color: white;
   background-color: var.$colorLightPrimary;
   border-radius: 5px;
@@ -14,19 +13,47 @@
 .btn-outline {
   background-color: transparent;
   color: var.$colorLightPrimary;
-  border: 2px solid var.$colorLightPrimary;
+  border: 1px solid var.$colorLightPrimary;
   border-radius: 25px;
 }
 
 .btn-round {
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   font-weight: 600;
   background-color: var.$colorPrimary;
-  border-radius: 25px;
+  border-radius: 45px;
 }
 
 .split {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.element-center {
+  display: grid;
+  place-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1300px;
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var.$fontHeading;
+  font-weight: 700;
+}
+
+body {
+  font-family: var.$fontBody;
+  font-weight: 400;
+  min-height: 100vh;
 }

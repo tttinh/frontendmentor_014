@@ -1,4 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+:root {
+  --clr-primary: hsl(322, 100%, 66%);
+  --clr-primary-light: hsl(321, 100%, 78%);
+  --clr-red: hsl(0, 100%, 63%);
+
+  --clr-cyan-dark: hsl(192, 100%, 9%);
+  --clr-blue-light: hsl(207, 100%, 98%);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,11 +24,24 @@ img {
   width: 100%;
 }
 
+h1,
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+}
+
 .btn {
-  text-align: center;
   display: inline-block;
+  text-align: center;
   cursor: pointer;
-  padding: 0.5rem 2rem;
+  padding: 0.25rem 1rem;
   color: white;
   background-color: #ff8fd8;
   border-radius: 5px;
@@ -32,87 +55,45 @@ img {
 }
 
 .btn-round {
-  padding: 1.5rem 2rem;
+  padding: 0.825rem 2rem;
   font-weight: 600;
   background-color: #ff52bf;
   border-radius: 45px;
 }
 
-.split {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.element-center {
-  display: grid;
-  place-items: center;
-}
-
-.text-center {
-  text-align: center;
-}
-
 .container {
   max-width: 1300px;
-  padding: 0 3rem;
+  padding: 0 2rem;
   margin: 0 auto;
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
+/* NAVBAR */
+.navbar {
+  padding: 2rem 1rem;
 }
 
-body {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  min-height: 100vh;
+.navbar img {
+  width: min(30vw, 240px);
 }
 
-header {
-  padding: 3rem 3rem;
-}
-header img {
-  width: 240px;
-}
-
+/* HERO */
 .hero .container {
   padding-top: 5rem;
   max-width: 1150px;
 }
-.hero .container img {
-  margin-top: 4rem;
+.hero .btn {
+  width: 200px;
 }
-.hero-title {
-  font-size: 3rem;
-}
-.hero-desc {
-  max-width: 520px;
-  margin: 2rem 0;
-}
-.hero .btn-round {
-  width: 300px;
-}
-
-.stats {
+.hero .stats {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   place-items: center;
+  row-gap: 2rem;
 }
-.stats__icon {
-  width: auto;
+.hero .stats__icon {
+  width: 2rem;
 }
-.stats__number {
-  font-weight: 700;
-  font-size: 6rem;
-}
-.stats__desc {
+.hero .stats__desc {
   color: gray;
-  font-size: 1.5rem;
 }
-
-/*# sourceMappingURL=style.css.map */

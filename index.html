@@ -6,6 +6,14 @@
     <!-- displays site properly based on user's device -->
 
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
       rel="icon"
       type="image/png"
       sizes="32x32"
@@ -105,16 +113,28 @@
 
     <section class="action">
       <div class="container">
-        <h2>Ready To Build Your Community?</h2>
-        <a href="#" class="btn btn-round">Get Started For Free</a>
+        <h2 class="action__title">Ready To Build Your Community?</h2>
+        <a href="#" class="action__btn btn btn-round">Get Started For Free</a>
       </div>
     </section>
 
     <footer>
       <div class="container">
+        <div class="newsletter">
+          <h3 class="newsletter__title">newsletter</h3>
+          <p class="newsletter__desc">
+            To recieve tips on how to grow your community, sign up to our weekly
+            newsletter. We’ll never send you spam or pass on your email address
+          </p>
+          <form class="newsletter__form" action="submit">
+            <input type="email" name="email" id="email" />
+            <button>Subscribe</button>
+          </form>
+        </div>
+
         <div class="contact">
-          <img src="images/logo.svg" alt="bottom logo" />
-          <p>
+          <img src="images/logo-white.svg" alt="bottom logo" />
+          <p class="contact__desc">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
             nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
           </p>
@@ -126,17 +146,18 @@
             <img src="images/icon-email.svg" alt="email icon" />
             <p>example@huddle.com</p>
           </div>
-        </div>
-        <div class="newsletter">
-          <h3>newsletter</h3>
-          <p>
-            To recieve tips on how to grow your community, sign up to our weekly
-            newsletter. We’ll never send you spam or pass on your email address
-          </p>
-          <form action="submit">
-            <input type="email" name="email" id="email" />
-            <button class="btn">Subscribe</button>
-          </form>
+
+          <div class="socials">
+            <a target="_blank">
+              <i class="fab fa-facebook-square fa-2x"></i>
+            </a>
+            <a target="_blank">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a target="_blank">
+              <i class="fab fa-twitter-square fa-2x"></i>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

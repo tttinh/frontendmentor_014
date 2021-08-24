@@ -44,14 +44,37 @@ body {
   min-height: 100vh;
 }
 
+button {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  padding: 0.75rem 2.5rem;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  background-color: #ff52bf;
+  border-radius: 5px;
+}
+
+input[type='email'] {
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--fs-md);
+  padding: 0.85rem 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
 .btn {
   display: inline-block;
   text-align: center;
   cursor: pointer;
+  border: none;
   padding: 0.25rem 1rem;
   color: white;
-  background-color: #ff8fd8;
-  border-radius: 5px;
+  font-weight: 600;
+  background-color: #ff52bf;
 }
 
 .btn-outline {
@@ -63,8 +86,6 @@ body {
 
 .btn-round {
   padding: 0.825rem 2rem;
-  font-weight: 600;
-  background-color: #ff52bf;
   border-radius: 45px;
 }
 
@@ -177,6 +198,10 @@ body {
   margin-bottom: 2rem;
 }
 
+.action__btn {
+  font-size: var(--fs-sm);
+}
+
 /* FOOTER */
 footer {
   color: var(--clr-blue-light);
@@ -208,6 +233,7 @@ footer p {
 
 input[type='email'] {
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .contact {

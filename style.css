@@ -116,11 +116,19 @@ input[type='email'] {
 }
 
 /* HERO */
+.hero {
+  background-image: url('images/bg-section-top-mobile-1.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
 .hero .container {
   padding-top: 5rem;
   max-width: 1150px;
   display: grid;
   place-items: center;
+  padding-bottom: 10rem;
 }
 
 .hero__title {
@@ -162,13 +170,26 @@ input[type='email'] {
   color: gray;
 }
 
-.together,
-.conversations,
-.users {
+/* TOGETHER */
+.together {
   padding: 6rem 0;
+  background-color: var(--clr-blue-light);
 }
 
-/* TOGETHER */
+.conversations {
+  padding: 12rem 0;
+  background-image: url('images/bg-section-bottom-mobile-1.svg'),
+    url('images/bg-section-top-mobile-2.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top, bottom;
+}
+
+.users {
+  background-color: var(--clr-blue-light);
+  padding-bottom: 6rem;
+}
+
 .content {
   text-align: center;
 }
@@ -186,7 +207,13 @@ input[type='email'] {
 
 /* ACTION */
 .action {
-  padding: 6rem 0;
+  padding-top: 12rem;
+  padding-bottom: 16rem;
+  background-image: url('images/bg-section-bottom-mobile-2.svg'),
+    url('images/bg-footer-top-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top, bottom;
 }
 
 .action .container {
@@ -275,4 +302,17 @@ input[type='email'] {
 }
 
 @media (min-width: 768px) {
+  .hero {
+    background-image: url('images/bg-section-top-desktop-1.svg');
+  }
+
+  .conversations {
+    background-image: url('images/bg-section-bottom-desktop-1.svg'),
+      url('images/bg-section-top-desktop-2.svg');
+  }
+
+  .action {
+    background-image: url('images/bg-section-bottom-desktop-2.svg'),
+      url('images/bg-footer-top-desktop.svg');
+  }
 }

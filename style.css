@@ -306,6 +306,42 @@ input[type='email'] {
     background-image: url('images/bg-section-top-desktop-1.svg');
   }
 
+  .hero__stats {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4rem;
+  }
+
+  .together .container,
+  .conversations .container,
+  .users .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'content figure';
+    column-gap: 10rem;
+  }
+
+  .conversations .container {
+    grid-template-areas: 'figure content';
+  }
+
+  .together .figure {
+    grid-column-start: 2;
+  }
+
+  .content {
+    text-align: left;
+    grid-area: content;
+  }
+
+  .figure {
+    grid-area: figure;
+  }
+
+  .content__desc {
+    max-width: 480px;
+  }
+
   .conversations {
     background-image: url('images/bg-section-bottom-desktop-1.svg'),
       url('images/bg-section-top-desktop-2.svg');

@@ -61,7 +61,7 @@ button {
 input[type='email'] {
   font-family: 'Open Sans', sans-serif;
   font-size: var(--fs-md);
-  padding: 0.85rem 0.5rem;
+  padding: 0.65rem 0.5rem;
   border-radius: 5px;
   border: none;
 }
@@ -302,6 +302,18 @@ input[type='email'] {
 }
 
 @media (min-width: 768px) {
+  :root {
+    --fs-sm: 1rem;
+    --fs-md: 1.275rem;
+    --fs-lg: 2.725rem;
+    --fs-xl: 2.525rem;
+    --fs-2xl: 6rem;
+  }
+
+  body {
+    font-weight: 400;
+  }
+
   .hero {
     background-image: url('images/bg-section-top-desktop-1.svg');
   }
@@ -316,9 +328,10 @@ input[type='email'] {
   .conversations .container,
   .users .container {
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 'content figure';
-    column-gap: 10rem;
+    column-gap: 6rem;
   }
 
   .conversations .container {
@@ -332,6 +345,16 @@ input[type='email'] {
   .content {
     text-align: left;
     grid-area: content;
+  }
+
+  .content__title {
+    margin: 0;
+    font-size: 2.275rem;
+  }
+
+  .content__desc {
+    font-size: 0.875rem;
+    line-height: 1.5;
   }
 
   .figure {
@@ -350,5 +373,43 @@ input[type='email'] {
   .action {
     background-image: url('images/bg-section-bottom-desktop-2.svg'),
       url('images/bg-footer-top-desktop.svg');
+  }
+
+  footer .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'contact newsletter';
+  }
+
+  .newsletter {
+    grid-area: newsletter;
+  }
+
+  .newsletter__form {
+    flex-direction: row;
+  }
+
+  .newsletter__form input {
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+
+  .newsletter__desc {
+    width: 360px;
+    font-size: var(--fs-sm);
+  }
+
+  .contact {
+    width: 320px;
+    grid-area: contact;
+    margin: 0;
+  }
+
+  .contact__desc {
+    font-size: var(--fs-sm);
+  }
+
+  .contact__item p {
+    font-size: var(--fs-sm);
   }
 }

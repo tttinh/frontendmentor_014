@@ -54,16 +54,41 @@ button {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 1.15rem;
-  background-color: #ff52bf;
+  background-color: var(--clr-primary);
   border-radius: 5px;
 }
 
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--clr-cyan-dark), 0 0 0 4px white;
+}
+
+button:hover {
+  background-color: var(--clr-primary-light);
+}
+
+/* EMAIL */
 input[type='email'] {
   font-family: 'Open Sans', sans-serif;
-  font-size: var(--fs-md);
-  padding: 0.65rem 0.5rem;
+  font-size: 0.875rem;
+  padding: 0.85rem 0.5rem;
   border-radius: 5px;
   border: none;
+}
+
+input[type='email']:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--clr-cyan-dark), 0 0 0 4px white;
+}
+
+input[type='email']:invalid {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #ff0033;
+}
+
+input[type='email']:invalid ~ .requirements {
+  visibility: visible;
 }
 
 .btn {
@@ -74,19 +99,35 @@ input[type='email'] {
   padding: 0.25rem 1rem;
   color: white;
   font-weight: 600;
-  background-color: #ff52bf;
+  background-color: var(--clr-primary);
 }
 
 .btn-outline {
   background-color: transparent;
-  color: #ff8fd8;
-  border: 1px solid #ff8fd8;
+  color: var(--clr-primary);
+  border: 1px solid var(--clr-primary);
   border-radius: 25px;
+}
+
+.btn-outline:hover {
+  color: var(--clr-primary-light);
+  border: 1px solid var(--clr-primary-light);
 }
 
 .btn-round {
   padding: 0.825rem 2rem;
   border-radius: 45px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.btn-round:hover {
+  background-color: var(--clr-primary-light);
+}
+
+.btn-outline:focus,
+.btn-round:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px black;
 }
 
 .container {
@@ -258,9 +299,18 @@ footer p {
   align-items: flex-end;
 }
 
+.newsletter__email {
+  width: 100%;
+}
+
+.newsletter__email .requirements {
+  font-size: 0.825rem;
+  visibility: hidden;
+  color: #ff0033;
+}
+
 input[type='email'] {
   width: 100%;
-  margin-bottom: 1rem;
 }
 
 .contact {
@@ -314,8 +364,18 @@ input[type='email'] {
     font-weight: 400;
   }
 
+  .navbar {
+    max-width: 1340px;
+    margin: 0 auto;
+  }
+
   .hero {
     background-image: url('images/bg-section-top-desktop-1.svg');
+    padding-bottom: 8rem;
+  }
+
+  .hero__desc {
+    max-width: 600px;
   }
 
   .hero__stats {
@@ -368,11 +428,17 @@ input[type='email'] {
   .conversations {
     background-image: url('images/bg-section-bottom-desktop-1.svg'),
       url('images/bg-section-top-desktop-2.svg');
+    padding-top: 18rem;
+    padding-bottom: 18rem;
   }
 
+  .users {
+    padding-top: 6rem;
+  }
   .action {
     background-image: url('images/bg-section-bottom-desktop-2.svg'),
       url('images/bg-footer-top-desktop.svg');
+    padding: 18rem 0;
   }
 
   footer .container {
@@ -387,11 +453,16 @@ input[type='email'] {
 
   .newsletter__form {
     flex-direction: row;
+    align-items: flex-start;
   }
 
-  .newsletter__form input {
+  .newsletter__email {
     margin-bottom: 0;
     margin-right: 2rem;
+  }
+
+  .newsletter__title {
+    font-size: 1.5rem;
   }
 
   .newsletter__desc {
@@ -411,5 +482,15 @@ input[type='email'] {
 
   .contact__item p {
     font-size: var(--fs-sm);
+  }
+
+  .btn-round {
+    width: 360px;
+    font-size: 1.125rem;
+    padding: 1.5rem 0;
+  }
+
+  .btn-outline {
+    padding: 0.5rem 1.75rem;
   }
 }
